@@ -1,0 +1,27 @@
+[project]
+name = "machine-learning"
+version = "0.1.0"
+description = "My ML journey projects"
+readme = "README.md"
+authors = [
+    { name = "Smruti Mohanty", email = "2spmohanty@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "jupyter",
+    "scikit-learn",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.15,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.workspace]
+members = [
+    "projects/course-labs",
+    "projects/linear-regression/medical-insurance-prediction",
+    "projects/linear-regression/student-performance",
+]
